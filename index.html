@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🩸 Blood Match</h1>
+    </header>
+    <main class="container">
+        <!-- Informational Section -->
+        <section class="info-section">
+            <img src="https://chughtailab.com/wp-content/uploads/2020/11/1350-x-280-1.jpg" alt="Blood Donation" class="banner">
+            <h2>Why Donate Blood? 🩸</h2>
+            <p>
+                Donating blood is an act of kindness that saves millions of lives every year. 
+                Whether it's for accident victims, surgeries, or medical conditions, your contribution 
+                can make a huge difference. Just one pint of blood can save up to three lives! 💉
+            </p>
+            <p>
+                💪 **Did you know?** Blood donation improves your health by stimulating red blood cell production 
+                and reducing the risk of heart disease. Let's be heroes together! 🦸‍♂️🦸‍♀️
+            </p>
+        </section>
+
+        <!-- Form Section -->
+        <form id="donorForm" onsubmit="event.preventDefault(); check();">
+            <label for="name">👤 Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="blood_group">💉 Blood Group:</label>
+            <select id="blood_group" name="blood_group" required>
+                <option value="">Select Your Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+            
+            <button type="submit">🔍 Check Compatibility</button>
+        </form>
+
+        <!-- Output Section -->
+        <div id="compatibleDonors" style="display: none;">
+            <h2>❤️ Compatible Donors</h2>
+            <p id="output"></p>
+        </div>
+        
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <h2>Ready to Donate? 🙌</h2>
+            <p>Visit your nearest blood bank or donation camp today! Let's save lives together. 🚑</p>
+            <a href="https://www.redcrossblood.org/" target="_blank" class="cta-btn">Find Blood Donation Centers</a>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

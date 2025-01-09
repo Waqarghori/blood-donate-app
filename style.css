@@ -210,7 +210,12 @@ button:hover
 #compatibleDonors h2 {
     color: #d9534f;
 }
-
+.btext{
+    text-align: center;
+}
+ .info-section p {
+    font-size: 1.2rem;
+}
 #output {
     font-size: 2rem;
     font-family: serif;

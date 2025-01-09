@@ -168,6 +168,57 @@ form button:hover {
 }
 
 
+
+header h1 {
+    color: #d9534f;
+    margin-top: 20px;
+}
+
+.container1 {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h2 {
+    color: #5a5a5a;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+#compatibleDonors {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#compatibleDonors h2 {
+    color: #d9534f;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
